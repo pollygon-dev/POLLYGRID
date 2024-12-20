@@ -6,11 +6,17 @@ It features draggable grids made possible by the Muuri Library!
 ## What's Inside?
 
 ★ Drag-and-drop grid layout with Muuri.js
+
 ★ Looks great on everything from phones to desktop
+
 ★ Easy color customization with CSS variables
+
 ★ Window-style components inspired by webcore
+
 ★ Flexible grid sizes for all your content needs
+
 ★ Clean, modern design with nice shadow effects
+
 ★ Helpful tooltips and modal windows
 
 ## Getting Started
