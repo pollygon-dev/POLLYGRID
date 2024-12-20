@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+           POLLYGRID v1.0
+    /// BY POLLYGON 2024 \\\
+
+   pollygon.nekoweb.org
+
+        ⋆｡°✩₊˚⋆｡°✩₊˚
+   
+   You can remove this
+   credit if you want!
+   No attribution needed.
+        
+        ⋆｡°✩₊˚⋆｡°✩₊˚
+-->
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description about your website. Change it to what fits your site! -->
+    <meta name="description" content="A modern, responsive grid layout system with draggable components">
+    <meta name="author" content="Your Name">
+    <!-- Your site title is below, as well as a 32x32 favicon! just change the favicon.ico with your favicon. -->
+    <title>POLLYGRID</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Required External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/muuri/0.9.5/muuri.min.js"></script>
+</head>
+<body>
+    <!-- 
+    Main Container
+    - Manages overall page layout
+    - Contains sidebar and main content
+    -->
+    <div class="page-container">
+        <div class="content-wrapper">
+            <!-- Sidebar Section -->
+            <div class="sidebar-container">
+                <!-- Customize your logo here, a placeholder logo is currently placed! -->
+                <div class="logo">
+                    <img src="placeholder.png" alt="Logo">
+                </div>
+                
+                <!-- Navigation Sidebar -->
+                <nav class="sidebar">
+                    <div class="sidebar-header">
+                        <div class="header-title">Navigation</div>
+                        <div class="window-controls">
+                            <div class="window-button minimize">-</div>
+                            <div class="window-button maximize">□</div>
+                            <div class="window-button close">×</div>
+                        </div>
+                    </div>
+                    <!-- Customize navigation items -->
+                    <div class="sidebar-content">
+                        <ul>
+                            <a href=""><li>Home</li></a>
+                            <a href=""><li>About me</li></a>
+                            <a href=""><li>Projects</li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Main Content Grid -->
+            <main class="main-content">
+                <div class="grid">
+                    <!-- Example Grid Items - Customize as needed -->
+                    
+                    <!-- Full Width Item -->
+                    <div class="grid-item size-full">
+                        <div class="grid-item-header">
+                            <div class="header-title">Welcome</div>
+                            <div class="window-controls">
+                                <div class="window-button minimize">-</div>
+                                <div class="window-button maximize">□</div>
+                                <div class="window-button close">×</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="content-inner">
+                                <p>Welcome to POLLYGRID! Start customizing this template by:</p>
+                                <ul class="styled-list ul">
+                                    <li>Adding your own content to grid items</li>
+                                    <li>Customizing the color scheme in CSS variables</li>
+                                    <li>Modifying the grid layout using size classes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Half Width Items -->
+                    <div class="grid-item size-half">
+                        <div class="grid-item-header">
+                            <div class="header-title">Left Section</div>
+                            <div class="window-controls">
+                                <div class="window-button minimize">-</div>
+                                <div class="window-button maximize">□</div>
+                                <div class="window-button close">×</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="content-inner">
+                                Example content for half-width section
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item size-half">
+                        <div class="grid-item-header">
+                            <div class="header-title">Right Section</div>
+                            <div class="window-controls">
+                                <div class="window-button minimize">-</div>
+                                <div class="window-button maximize">□</div>
+                                <div class="window-button close">×</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="content-inner">
+                                Example content for half-width section
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Square Item Example -->
+                    <div class="grid-item size-square">
+                        <div class="grid-item-header">
+                            <div class="header-title">Square Item</div>
+                            <div class="window-controls">
+                                <div class="window-button minimize">-</div>
+                                <div class="window-button maximize">□</div>
+                                <div class="window-button close">×</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="content-inner">
+                                Square content area
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Three Units Width Example -->
+                    <div class="grid-item size-three-units">
+                        <div class="grid-item-header">
+                            <div class="header-title">Wide Section & Info Tags</div>
+                            <div class="window-controls">
+                                <div class="window-button minimize">-</div>
+                                <div class="window-button maximize">□</div>
+                                <div class="window-button close">×</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="content-inner">
+                                Example of a wider section (60% width) and Info tags where you can put some info!
+                                <br> <br>
+                                <div class="info-container">
+                                    <div class="info-tag">Status: Online</div>
+                                    <div class="info-tag">Role: Healer</div>
+                                    <div class="info-tag">Level: 150</div>
+                                    <div class="info-tag">Hello: Hi</div>
+                                    <div class="info-tag">Location: Remote</div>
+                                    <div class="info-tag">Team: Alpha</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item with Link Examples -->
+                    <div class="grid-item size-half">
+                        <div class="grid-item-header">
+                            <div class="header-title">Link Examples</div>
+                            <div class="window-controls">
+                                <div class="window-button minimize">-</div>
+                                <div class="window-button maximize">□</div>
+                                <div class="window-button close">×</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="content-inner">
+                                <!-- Regular link with hover underline effect -->
+                                 <p>Hover on the portfolio link below!</p>
+                                 <br> <br>
+                                <p>Check out my <a href="#">portfolio</a> for more examples.</p>
+                                
+                                <br>
+                                
+                                <!-- Button-style link -->
+                                <a href="#" class="link-button">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item with Tooltip Example -->
+                    <div class="grid-item size-half">
+                        <div class="grid-item-header">
+                            <div class="header-title">Tooltip Example</div>
+                            <div class="window-controls">
+                                <div class="window-button minimize">-</div>
+                                <div class="window-button maximize">□</div>
+                                <div class="window-button close">×</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="content-inner">
+                                <div class="tooltip">
+                                    Hover over me!
+                                    <span class="tooltiptext">This is a tooltip example. You can use it to show additional information.</span>
+                                </div>
+                                <br>
+                                <div class="tooltip">
+                                    Another tooltip
+                                    <span class="tooltiptext">Tooltips can contain longer text and will position themselves automatically.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item with Modal Button -->
+                    <div class="grid-item size-half">
+                        <div class="grid-item-header">
+                            <div class="header-title">Modal Example</div>
+                            <div class="window-controls">
+                                <div class="window-button minimize">-</div>
+                                <div class="window-button maximize">□</div>
+                                <div class="window-button close">×</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="content-inner">
+                                <button class="modal-button" data-modal="exampleModal1">Open Simple Modal</button>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Grids end here! -->
+                </div> 
+
+                  <!-- Modal Examples -->
+                    <!-- Simple Modal -->
+                    <div id="exampleModal1" class="modal-overlay">
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <div class="modal-title">Simple Modal</div>
+                                <div class="window-controls">
+                                    <div class="window-button close">×</div>
+                                </div>
+                            </div>
+                            <div class="modal-content">
+                                <div class="modal-content-centered">
+                                    <p>This is a simple modal example.</p>
+                                    <p>Click outside or the close button to exit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modals end here! -->
+            </main>
+        </div>
+    </div>
+
+    <!-- Core Script -->
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
